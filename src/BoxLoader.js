@@ -2,8 +2,8 @@ import React from 'react';
 
 const BoxLoader = (props) => {
     return (
-        <div className={'loader ' + props.animation}>
-            <div className="BoxLoading" />
+        <div className={'box-loader ' + props.animation}>
+            <div className="box" />
             <p>{props.message}</p>
         </div>
     );

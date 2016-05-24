@@ -6,6 +6,7 @@ import {ANIMATIONS} from './constants.js';
 class SmartLoader extends React.Component {
     static propTypes = {
         isLoading: PropTypes.bool.isRequired,
+        hideContent: PropTypes.bool,
         showAfter: PropTypes.number,
         minimumDuration: PropTypes.number,
         introDuration: PropTypes.number,
@@ -16,6 +17,7 @@ class SmartLoader extends React.Component {
 
     static defaultProps = {
         showAfter: 1500,
+        hideContent: true,
         minimumDuration: 2000,
         introDuration: 1000,
         outroDuration: 500,
@@ -30,7 +32,7 @@ class SmartLoader extends React.Component {
 
         this.state = {
             isLoaderVisible: false,
-            isContentVisible: false,
+            isContentVisible: !props.hideContent,
             loaderAnimation: ANIMATIONS.NONE
         };
     }
@@ -74,7 +76,7 @@ class SmartLoader extends React.Component {
         this.setState({
             loaderAnimation: ANIMATIONS.NONE,
             isLoaderVisible: false,
-            isContentVisible: false
+            isContentVisible: !props.hideContent
         });
 
         window.clearTimeout(this.showTimer);
