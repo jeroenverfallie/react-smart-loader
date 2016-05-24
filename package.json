@@ -1,6 +1,6 @@
 {
   "name": "react-smart-loader",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "A smarter loader for your React applications.",
   "main": "lib/index.js",
   "scripts": {
