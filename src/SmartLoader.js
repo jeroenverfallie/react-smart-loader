@@ -1,6 +1,6 @@
 import React, {PropTypes} from 'react';
 
-import BoxLoader from './BoxLoader.jsx';
+import BoxLoader from './BoxLoader.js';
 import {ANIMATIONS} from './constants.js';
 
 class SmartLoader extends React.Component {

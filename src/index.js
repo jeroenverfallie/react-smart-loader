@@ -1,2 +1,2 @@
-export default from './SmartLoader.jsx';
+export default from './SmartLoader.js';
 export {ANIMATIONS} from './constants.js';
