@@ -76,7 +76,7 @@ class SmartLoader extends React.Component {
         this.setState({
             loaderAnimation: ANIMATIONS.NONE,
             isLoaderVisible: false,
-            isContentVisible: !props.hideContent
+            isContentVisible: !this.props.hideContent
         });
 
         window.clearTimeout(this.showTimer);
